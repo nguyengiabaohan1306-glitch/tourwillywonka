@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Willy Wonka Factory</title>
+  <link rel="stylesheet" href="wonkastyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Patrick+Hand&family=Comic+Neue&display=swap&subset=vietnamese" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="effect.js"></script>
+</head>
+<body>
+  <div class="controls">
+   <button id="musicBtn" onclick="toggleMusic()">🎵 Bật/Tắt nhạc</button>
+   <audio id="music" src="music/wonka.mp3"></audio>
+  </div>
+  <script>
+  const audio = document.getElementById('music');
+  function toggleMusic() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+  </script>
+  <section class="hero">
+    <div class="text-box">
+      <h1>Welcome To The<br><span>Willy Wonka Factory</span></h1>
+      <p>Tham gia chuyến phiêu lưu ngọt ngào nhất trên Trái Đất.<br>
+      Chỉ có 10 du khách may mắn được chọn mỗi thập kỷ!</p>
+    <div class="form-row">
+      <a href="#book" class="btn primary">🍫 Đăng ký ngay</a>
+      <a href="#schedule-section" class="btn schedule">🕰️ Xem lịch trình</a>
+    </div> 
+    </div>
+
+    
+
+    <div class="image-box">
+      <img src="images/wonkafactory.jpg" alt="Willy Wonka Factory">
+      <div class="ticket">🎫 Golden Ticket</div>
+      <div class="camera">📸 Explore the Magic</div>
+    </div>
+  </section>
+
+  <section id="schedule-section" class="schedule-section">
+  <h2>🕰️ Lịch trình chi tiết</h2>
+
+  <div class="schedule-item">
+    <h3 class="ten">🚪 07:00 – Cổng Sô-cô-la Mở Ra</h3>
+    <div class="mota">
+    <p>Du khách tập trung trước cánh cổng khổng lồ làm bằng sô-cô-la nguyên chất, tan chảy chậm rãi dưới ánh nắng.</p>
+    <p><b>Willy Wonka</b> xuất hiện trong bộ áo khoác tím, đội mũ chóp và cười bằng giọng như nhạc kẹo tan.<br>
+    “Chào mừng đến với nơi mọi giấc mơ – và cơn ác mộng – đều được gói trong giấy bạc.”</p>
+    </div>
+  </div>
+
+  <div class="schedule-item">
+    <h3 class="ten">🍬 08:00 – Sông Sô-cô-la và Thác Kẹo Caramel</h3>
+    <div class="mota">
+    <p>Du khách lên thuyền lá đường, trôi trên dòng sông sô-cô-la sôi nhẹ.</p>
+    <p>Hai bên bờ là rừng kẹo dẻo phát sáng và những cây kem tự mọc lại sau khi bị ăn.</p>
+    <p><i>Cảnh báo:</i> Không được chạm nước – nhiệt độ cao có thể khiến bạn “trở thành nhân sô-cô-la”.</p>
+    </div>
+  </div>
+
+  <div class="schedule-item">
+    <h3 class="ten">🧁 10:00 – Xưởng Bánh Kẹo Tự Sinh</h3>
+    <div class="mota">
+    <p>Tham quan phòng sản xuất nơi kẹo “nở” từ hạt giống ngọt – những sinh vật nhỏ tí hon hát ca trong khi thu hoạch kẹo bông.</p>
+    <p>Một vài viên kẹo có ý thức riêng, chúng sẽ thì thầm vào tai bạn những công thức bí mật nếu bạn nếm thử chúng…</p>
+    </div>
+  </div>
+
+  <div class="schedule-item">
+    <h3 class="ten">🧃 12:00 – Bữa Trưa Bay</h3>
+    <div class="mota">
+    <p>Thưởng thức thực đơn 7 món hoàn toàn từ hương vị – bạn chỉ ngửi, không ăn, nhưng vẫn thấy no và ngất ngây như vừa dự tiệc hoàng gia.</p>
+    <p>Có món “Súp vị ước mơ” và “Tráng miệng mùi ký ức”.</p>
+    </div>
+  </div>
+
+  <div class="schedule-item">
+    <h3 class="ten">🧩 14:00 – Phòng Phát Minh Bí Ẩn</h3>
+    <div class="mota">
+    <p>Nơi Willy Wonka tạo ra những sản phẩm chưa từng được tung ra thị trường:</p>
+    <ul>
+      <li>Kẹo khiến người ăn bay lên trần nhà</li>
+      <li>Kẹo dẻo “biết hát” khi tan</li>
+      <li>Sô-cô-la xóa ký ức buồn trong 5 phút</li>
+      <li>Và “kẹo thời gian” – giúp bạn trở lại 1 khoảnh khắc hạnh phúc bất kỳ (chưa có giấy phép thử nghiệm)</li>
+    </ul>
+    </div>
+  </div>
+
+  <div class="note">
+    <h3>💼 Ghi chú từ công ty:</h3>
+    <p>Trang phục: Nên mặc đồ sáng màu, chống dính sô-cô-la.<br>
+    Không chịu trách nhiệm nếu du khách bị thu nhỏ, tan chảy hoặc bay mất kiểm soát.<br>
+    <b>Willy Wonka Chocolate Factory</b> giữ quyền thay đổi, kéo dài, hoặc… kết thúc tour bất cứ lúc nào.</p>
+  </div>
+</section>
+<!-- Booking -->
+  <section id="book" class="booking">
+    <h2>Đăng ký & Thông tin</h2>
+    <p>Vé giới hạn. Liên hệ để biết lịch khởi hành tiếp theo.</p>
+    <form class="booking-form" onsubmit="event.preventDefault(); alert('Cảm ơn! Chúng tôi sẽ liên hệ bạn sớm.');">
+      <label>Họ và tên <input type="text" required placeholder="Nguyễn Văn A" /></label>
+      <label>Email <input type="email" required placeholder="email@vd.com" /></label>
+      <label>Số điện thoại <input type="tel" required placeholder="+84 9..." /></label>
+      <label>Ghi chú (tùy chọn) <textarea placeholder="Bạn muốn chỗ gần cửa sổ, ăn chay..."></textarea></label>
+
+      <div class="form-row">
+        <button class="btn primary" type="submit">🍫 Đăng ký — 10 USD</button>
+        <button class="btn ghost" type="reset">🔄 Làm lại</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
