@@ -6,30 +6,6 @@ body {
  
   overflow-x: hidden;
 }
-.hh-header{
-    position: relative;
-    height: 170px;
-}
-.hh-company{
-    font-family: Arial;
-    font-size: 35px;
-    text-shadow: 0 0 2px red;
-    position: absolute;
-    top: 45px;
-    padding-bottom: 2px;
-    border-bottom: 1px dotted grey;
-}
-.hh-slogan{
-    position: absolute;
-    top:100px;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-a:hover {
-    color: green;
-}
 /* Nút điều khiển nhạc */
  #musicBtn {
   cursor: pointer;
